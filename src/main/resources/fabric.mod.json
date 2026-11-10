@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "alienskin",
+  "version": "${version}",
+  "name": "Alien Skin",
+  "description": "Turns players into skinny grey aliens. Toggle with a keybind, mouth moves with Simple Voice Chat.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.alienskin.AlienSkinClient"],
+    "voicechat": ["com.alienskin.voice.AlienVoicePlugin"]
+  },
+  "mixins": ["alienskin.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  },
+  "suggests": {
+    "voicechat": "*"
+  }
+}
